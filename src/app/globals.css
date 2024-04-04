@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .feature-card {
+    background-color: #1a202c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card {
+    background-color: #2d3748;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  } */

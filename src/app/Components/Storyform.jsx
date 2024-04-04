@@ -18,36 +18,35 @@ const Storyform = ({ onSubmit }) => {
     setInputValue("");
   };
 
-//   console.log("inputvalue",inputValue)
+  
 
   return (
-    <div className="container mx-auto mt-5">
-      <h2 className="text-2xl font-bold mb-4">Simple Form Example</h2>
+    <div className="container mx-auto ">
+      <h2 className="text-2xl font-bold text-white  py-4 mb-4">
+        {" "}
+        Generate Story{" "}
+      </h2>
 
-      <form onSubmit={handleSubmit} className="mb-4">
-        <div className="mb-4">
-          <label
-            htmlFor="textInput"
-            className="block text-sm font-medium text-gray-600"
+      <form onSubmit={handleSubmit} className="mb-2">
+        <div className="flex w-[100%] px-2 justify-center ">
+          <div className=" w-[100%]">
+            <input
+              type="text"
+              id="textInput"
+              name="textInput"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              className="py-[.5rem] px-4 p-2 w-full border rounded-md"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="bg-red-500 hover:bg-brown-700 py-[.1rem] px-4 text-white font-semibold  rounded"
           >
-            Enter Text:
-          </label>
-          <input
-            type="text"
-            id="textInput"
-            name="textInput"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
-          />
+            Submit
+          </button>
         </div>
-
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        >
-          Submit
-        </button>
       </form>
     </div>
   );
